@@ -6,11 +6,10 @@ function maximum(x) {
   console.log(x1, x);
   console.log('-----------------------');
   if (x.length == 0) {
-    return x;
+    return x1;
   } else {
     return Math.max(x1, maximum(x));
   }
 };
 // console.log(Math.max(1,2));
 console.log(maximum([1,2,3]));
-
