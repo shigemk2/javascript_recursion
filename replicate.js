@@ -5,5 +5,5 @@ function replicate(n, x) {
     x.push(x[0]);
     return replicate(n - 1, x);
   }
-};
+}
 console.log(replicate(5,[5]));
