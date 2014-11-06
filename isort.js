@@ -6,7 +6,6 @@ function isort(x) {
 
       while (j > 0 && x[j - 1] > tmp) {
         x[j] = x[j - 1];
-        // console.log("tmp: ", tmp, "x[j]: ", j, x[j]);
         j--;
       }
       x[j] = tmp;
