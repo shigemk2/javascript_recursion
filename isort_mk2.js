@@ -10,10 +10,9 @@ function insert(x, xs) {
   }
 }
 
-function isort(x) {
-  if(x.length <= 0) {
-    return x;
-  }
-  return insert(x.shift(), (isort(x)));
+function isort(xs) {
+  if (xs.length <= 0) return xs;
+  var x = xs.shift();
+  return insert(x, isort(xs));
 }
 console.log(isort([4,3,5,2,1]));
